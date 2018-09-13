@@ -98,6 +98,7 @@
     calendar.locale = locale;
     self.monthFormatter = [[NSDateFormatter alloc] init];
     self.monthFormatter.calendar = calendar;
+    self.monthFormatter.timeZone = calendar.timeZone;
     self.monthFormatter.locale = locale;
     [self.monthFormatter setDateFormat:@"MMMM yyyy"];
 }
